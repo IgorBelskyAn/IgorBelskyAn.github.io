@@ -31,7 +31,7 @@ header{
 }
 nav{
 margin-top: 20px;
-display: inline-block;
+display: block;
 }
 nav div{
 	display: inline-block
@@ -59,14 +59,6 @@ nav a:hover{
 min-height: calc(100vh - 80px);
 
 }
-.main-text{
-	background-color: white;
-	border-radius: 5px;
-	padding: 40px;
-	text-align: left;
-	line-height: 30px;
-	font-size: 20px
-}
 .main-content h1{
 	color: white;
 	text-transform: uppercase;
@@ -75,6 +67,34 @@ min-height: calc(100vh - 80px);
 	letter-spacing: 2px;
 	font-family: 'Alegreya', serif;
 }
+.main-text{
+	background-color: white;
+	border-radius: 5px;
+	padding: 40px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 20px;
+}
+.link-university{
+	transition: .3s;
+	text-decoration: none;
+	color: #30bae7
+}
+.link-university:hover{
+	color: #eb7d4b;
+
+}
+.prof{
+	width: 30%;
+	border: 3px solid gray;
+	float: left;
+	margin-right: 5px
+}
+.need{
+	width: 30%;
+	border: 3px solid gray;
+}
+
 footer{
 	background-color: #344b8e;
 	text-align: center;
@@ -88,7 +108,7 @@ footer{
 footer p{
 	margin: 0
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1146px){
 	header{
 	padding: 25px 1%;
 }
@@ -96,8 +116,7 @@ footer p{
 	padding: 25px 5%;
 }
 }
-
-@media only screen and (max-width: 836px){
+@media only screen and (max-width: 938px){
 nav div, nav{
 	display: block;
 	margin: 25px 0
@@ -107,6 +126,10 @@ nav div, nav{
 }
 .main-text{
 	font-size: 17px;
+	padding: 40px 20px 40px 20px
 
+}
+.prof, .need{
+	width: 50%
 }
 }
