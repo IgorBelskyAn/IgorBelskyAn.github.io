@@ -44,7 +44,7 @@ nav a{
     font-weight: 800;
 	text-decoration: none;
 }
-nav a:hover{
+nav a:not(.active):hover{
  background-color: #643a79;
 }
 .active{
@@ -74,7 +74,17 @@ min-height: calc(100vh - 80px);
 	text-align: left;
 	line-height: 30px;
 	font-size: 20px;
+	text-indent: 20px
 }
+.research div{
+	text-align: center
+}
+.research img{
+	border: 2px solid #000;
+	
+	width: 500px;
+	
+	}
 .link-university{
 	transition: .3s;
 	text-decoration: none;
@@ -95,6 +105,29 @@ min-height: calc(100vh - 80px);
 	border: 3px solid gray;
 }
 
+.table-wrap{
+	overflow-x:auto;
+}	
+.resources{
+	border: 2px solid #000;
+	border-radius: 4px;
+	text-align: center;
+	width: 100%
+}
+.resources td{
+	padding: 10px;
+	text-indent: 0
+}
+.head td{
+	text-align: center;
+	background-color: #D8BFD8;
+}
+.green{
+	background:	#93DF58
+}
+.red{
+	background-color: #FA8072;
+}
 footer{
 	background-color: #344b8e;
 	text-align: center;
@@ -102,6 +135,9 @@ footer{
 	color: white;
 	font-weight: 600;
 }
+
+
+
 
 footer p{
 	margin: 0
@@ -131,3 +167,8 @@ nav div, nav{
 	width: 50%
 }
 }
+@media (max-width:600px){
+	.research img{
+		width: 80vw
+	}
+} 
