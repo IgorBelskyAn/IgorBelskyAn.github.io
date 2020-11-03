@@ -76,6 +76,10 @@ min-height: calc(100vh - 80px);
 	font-size: 20px;
 	text-indent: 20px
 }
+.frame{
+	width: 700px;
+	height: 422px;
+}
 .research div{
 	text-align: center
 }
@@ -124,14 +128,15 @@ min-height: calc(100vh - 80px);
 }
 .green{
 	background:	#93DF58;
+	
+}
+.green,.red{
+	vertical-align: top;
 	width: 25%;
 	text-align: left
-	
 }
 .red{
 	background-color: #FA8072;
-	width: 25%;
-	text-align: left
 }
 .universe td{width: 50%}
 
@@ -179,4 +184,16 @@ nav div, nav{
 	.research img{
 		width: 80vw
 	}
+} 
+@media (max-width:727px){
+.frame{
+	width: 500px;
+	height: 310px;
+}
+} 
+@media (max-width:512px){
+.frame{
+	width: 300px;
+	height: 197px;
+}
 } 
