@@ -123,11 +123,19 @@ min-height: calc(100vh - 80px);
 	background-color: #D8BFD8;
 }
 .green{
-	background:	#93DF58
+	background:	#93DF58;
+	width: 25%;
+	text-align: left
+	
 }
 .red{
 	background-color: #FA8072;
+	width: 25%;
+	text-align: left
 }
+.universe td{width: 50%}
+
+
 footer{
 	background-color: #344b8e;
 	text-align: center;
