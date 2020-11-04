@@ -139,7 +139,12 @@ min-height: calc(100vh - 80px);
 	background-color: #FA8072;
 }
 .universe td{width: 50%}
-
+.universe-text{
+	text-align: left
+}
+.universe-text em{
+	border: 2px dotted #8B0000;
+}
 
 footer{
 	background-color: #344b8e;
