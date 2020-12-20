@@ -12,7 +12,7 @@ body{
    
 }
 header{
-	background-color: #87509c;
+	background-color: 	#3B4867;
 	padding: 25px 10%;
 	text-align: center;
 
@@ -25,7 +25,7 @@ header{
 	display: inline-block;
 	margin: 0;
 	color: white;
-	font-size: 50px;
+	font-size: 45px;
 	font-weight: 800;
 
 }
@@ -36,7 +36,7 @@ display: block;
 nav div{
 	display: inline-block
 }
-nav a{
+nav a:not(.sub){
 	transition: 0.3s;
 	color: white;
 	text-transform: uppercase;
@@ -44,15 +44,47 @@ nav a{
     font-weight: 800;
 	text-decoration: none;
 }
-nav a:not(.active):hover{
- background-color: #643a79;
+nav a:not(.active):not(.sub):hover{
+ background-color: #2f3a52;
+}
+.sub-menu{
+	transition: 0.3s;
+	transform-origin: 0 0;
+	transform: scaleY(0);
+	width: 120%;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	background-color: #3B4867;
+}
+.digit{
+	transition: 0.3s;
+}
+.digit:hover .sub-menu{
+	transform: scaleY(1);
+}
+
+.sub-menu div{
+	
+	margin: 5px 2px;
+	border-bottom: 1px solid #B3C1CC
+}
+.sub{
+transition: 0.3s;
+	color: white;
+	padding: 0;
+	text-transform: uppercase;
+    font-weight: 800;
+text-decoration: none;}
+.sub:hover{
+	color: #d74680
 }
 .active{
 	background-color: #d74680
 }
 
 .main-content{
-	background-color: #66CDAA;
+	background-color: 	#B3C1CC;
 	box-sizing: border-box;
 	text-align: center;
 	padding: 25px 10%;
@@ -76,10 +108,18 @@ min-height: calc(100vh - 80px);
 	font-size: 20px;
 	text-indent: 20px
 }
+li{
+	text-indent: 0
+}
 .frame{
 	width: 700px;
 	height: 422px;
+	margin-top: 50px
 }
+#wrap-map{
+	overflow: hidden;
+}
+
 .research div{
 	text-align: center
 }
@@ -126,18 +166,7 @@ min-height: calc(100vh - 80px);
 	text-align: center;
 	background-color: #D8BFD8;
 }
-.green{
-	background:	#93DF58;
-	
-}
-.green,.red{
-	vertical-align: top;
-	width: 25%;
-	text-align: left
-}
-.red{
-	background-color: #FA8072;
-}
+
 .universe td{width: 50%}
 .universe-text{
 	text-align: left
@@ -147,7 +176,7 @@ min-height: calc(100vh - 80px);
 }
 
 footer{
-	background-color: #344b8e;
+	background-color: #3B4867;
 	text-align: center;
 	padding: 25px;
 	color: white;
@@ -168,10 +197,16 @@ footer p{
 	padding: 25px 5%;
 }
 }
+@media only screen and (max-width: 508px){
+nav div, nav{
+	 display: block;
+	margin: 25px 0 
+}
+}
 @media only screen and (max-width: 938px){
 nav div, nav{
-	display: block;
-	margin: 25px 0
+	/* display: block;
+	margin: 25px 0 */
 }
 .main-content{
 	padding: 15px 0;
